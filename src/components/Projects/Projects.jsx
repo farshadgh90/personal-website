@@ -15,8 +15,8 @@ const Portfolio = () => {
                 <p>{card.description}</p>
               </div>
               <div className="card--btn">
-                <a href={card.code} target="_blank">Source Code</a>
-                <a href={card.url} target="_blank">Go To Website</a>
+                <a href={card.code} target="_blank" rel="noreferrer">Source Code</a>
+                <a href={card.url} target="_blank" rel="noreferrer">Go To Website</a>
               </div>
             </div>
           ))}
