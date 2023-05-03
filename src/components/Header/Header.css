@@ -1,0 +1,101 @@
+.Header{
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    padding: 43px 0;
+}
+
+.Header img{
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+.Header ul{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.Header ul li{
+    list-style: none;
+}
+
+.Header ul li a{
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: bold;
+    transition: 400ms;
+}
+
+.Header ul li a:hover , .Header ul li.active a{
+    color: var(--primary);
+}
+
+.Button--Md{
+    margin: auto;
+}
+
+@media (max-width: 960px){
+    .Header{
+        margin-left: 40px;
+    }
+
+    .Header ul{
+        flex: 0;
+        margin-right: 30px;
+        margin: 0 auto;
+        transition-duration: 0.3s;
+    }
+}
+
+@media (max-width: 725px) {
+    .Header{
+        font-size: 12px;
+        transition-duration: 0.3s;
+    }
+
+    .Button--Md a{
+        font-size: 12px;
+        transition-duration: 0.3s;
+    }
+}
+
+@media (max-width: 600px){
+    .Header{
+        margin-left: 0;
+    }
+
+    .Header img{
+        max-width: 60px;
+        transition-duration: 0.3s;
+    }
+
+    .Header ul{
+        margin: 0;
+    }
+
+    .Button--Md{
+        transition-duration: 0.3s;
+        display: none
+    }
+}
+
+@media (max-width: 425px){
+    .Header{
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+
+    .Header img{
+        transition-duration: 0.3s;
+        display: none;
+    }
+
+    .Header ul{
+        transition-duration: 0.3s;
+        gap: 14px;
+    }
+}

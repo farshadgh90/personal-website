@@ -1,0 +1,97 @@
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Contact--info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 20%;
+}
+
+.Contact--image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact--image img{
+    width: 70%;
+}
+
+.Contact--res{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .Contact--info{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .Contact{
+        display: none;
+    }
+
+    .Contact--res{
+        display: block;
+        max-width: 768px;
+    }
+
+    .Contact--res--content{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        background-color: var(--primary);
+        border-radius: 20px;
+    }
+
+    .Contact--res__image{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -30px;
+    }
+
+    .Contact--res__image img{
+        width: 80%;
+    }
+
+    .Contact--res__info{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .Contact--res__info h2{
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 500px){
+    .Contact--res__info{
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+
+    .Footer ul{
+        transition-duration: 0.3s;
+        font-size: 20px;
+    }
+
+    .Footer div{
+        transition-duration: 0.3s;
+        font-size: 12px;
+    }
+}
