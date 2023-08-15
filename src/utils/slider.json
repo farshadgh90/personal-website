@@ -1,0 +1,51 @@
+[
+  {
+    "image": "/images/9.webp",
+    "title": "E-Commerce Website",
+    "description": "E-Commerce Website Using Redux and Tailwind CSS",
+    "url": "https://e-commerce-website-farshad.netlify.app/",
+    "code": "https://github.com/farshadgh90/e-commerce-website"
+  },
+  {
+    "image": "/images/8.webp",
+    "title": "Hulu Clone",
+    "description": "React Hulu Clone App Using Next JS, Rest API and Tailwind CSS",
+    "url": "https://hulu-clone-farshad.netlify.app/",
+    "code": "https://github.com/farshadgh90/Hulu-Clone"
+  },
+  {
+    "image": "/images/7.webp",
+    "title": "Real Estate",
+    "description": "React Real Estate Website Using States and Hooks, Swiper js and Framer Motion",
+    "url": "https://real-estate-farshad.netlify.app/",
+    "code": "https://github.com/farshadgh90/RealEstate-Website"
+  },
+  {
+    "image": "/images/1.webp",
+    "title": "Berim Tour",
+    "description": "Tour Operator and Guide for Visitors",
+    "url": "https://berimtour.netlify.app",
+    "code": "https://github.com/farshadgh90/berimtour"
+  },
+  {
+    "image": "/images/2.webp",
+    "title": "Bamboo",
+    "description": "Virtual Training Website for Programming Courses Using TypeScript",
+    "url": "https://bambo-website-react.netlify.app/",
+    "code": "https://github.com/farshadgh90/bambo-react"
+  },
+  {
+    "image": "/images/3.webp",
+    "title": "Todo App",
+    "description": "Todo App with React",
+    "url": "https://farshadgh90.github.io/TodoApp/",
+    "code": "https://github.com/farshadgh90/TodoApp"
+  },
+  {
+    "image": "/images/4.webp",
+    "title": "Buy a Simcard",
+    "description": "Sim Card Purchase Website",
+    "url": "https://farshadgh90.github.io/buy-a-simcard/",
+    "code": "https://github.com/farshadgh90/buy-a-simcard"
+  }
+]

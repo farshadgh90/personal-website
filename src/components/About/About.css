@@ -86,13 +86,12 @@
 
 @media (max-width: 425px){
     .About--PhotoSection img{
-        max-width: 300px;
-        height: auto;
-        transition-duration: 0.3s;
+        display: none;
     }
 
     .About--ContentSection  h1{
         font-size: 20px;
+        margin-bottom: 25px;
         transition-duration: 0.3s;
     }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../Layout/Layout";
 import './About.css'
-import photo from './frontEndDeveloper.jpg'
+import photo from './frontEndDeveloper.webp'
 
 const About = () => {
   return <Layout>
@@ -12,7 +12,7 @@ const About = () => {
       </div>
       <div className="About--ContentSection">
         <h1>
-          Junior Front-End Developer
+          Front-End Developer
         </h1>
         <p>
           As a highly motivated and dedicated individual,

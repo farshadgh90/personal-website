@@ -1,101 +1,142 @@
-.Header{
-    max-width: 1000px;
-    justify-content: center;
+.h-menu-1{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    display: flex;
     padding: 43px 0;
 }
 
-.Header img{
+.h-image{
     max-width: 80px;
     border-radius: 50%;
 }
 
-.Header ul{
-    flex: 1;
+.h-menu-1 ul{
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
-.Header ul li{
+.menu-1, .menu-2 ul, .hidden ul{
     list-style: none;
 }
 
-.Header ul li a{
+.menu-1 a, .menu-2 a, .hidden a{
     text-decoration: none;
     color: var(--gray);
     font-weight: bold;
-    transition: 400ms;
+    transition: all 0.4s;
 }
 
-.Header ul li a:hover , .Header ul li.active a{
+.menu-1 a:hover, .h-container ul li.active a, .menu-2 a:hover{
     color: var(--primary);
 }
 
-.Button--Md{
-    margin: auto;
+.h-menu-2{
+    display: none;
 }
 
-@media (max-width: 960px){
-    .Header{
-        margin-left: 40px;
+@media (max-width: 768px){
+    .h-menu-1{
+        display: none;
     }
 
-    .Header ul{
-        flex: 0;
-        margin-right: 30px;
-        margin: 0 auto;
-        transition-duration: 0.3s;
-    }
-}
-
-@media (max-width: 725px) {
-    .Header{
-        font-size: 12px;
-        transition-duration: 0.3s;
+    .h-menu-2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 43px 0;
     }
 
-    .Button--Md a{
-        font-size: 12px;
-        transition-duration: 0.3s;
-    }
-}
-
-@media (max-width: 600px){
-    .Header{
-        margin-left: 0;
-    }
-
-    .Header img{
-        max-width: 60px;
-        transition-duration: 0.3s;
+    .hidden-layer{
+        width: 90%;
+        height: 170vh;
+        background-color: #ffffff;
+        opacity: 50%;
+        position: absolute;
+        top: 18%;
+        z-index: 99;
+        transition: all 0.3s;
     }
 
-    .Header ul{
-        margin: 0;
+    .menu-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        width: 60%;
+        height: 60vh;
+        position: absolute;
+        top: 18%;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        transition: all 0.4s;
     }
 
-    .Button--Md{
-        transition-duration: 0.3s;
-        display: none
+    .menu-2 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-right: 2.8rem;
+    }
+
+    .hidden{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        width: 60%;
+        height: 60vh;
+        position: absolute;
+        top: 18%;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s;
+    }
+
+    .hidden ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-right: 2.8rem;
+    }
+
+    .hidden{
+        opacity: 0;
+        transition: all 0.4s;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-btn a{
+        color: white;
+    }
+
+    .menu-btn a:hover{
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        color: white !important;
+    }
+
+    .h-image{
+        max-width: 65px;
     }
 }
 
 @media (max-width: 425px){
-    .Header{
-        padding: 25px 0;
-        margin: 0 auto;
+    .menu-2{
+        font-size: 0.8rem;
     }
 
-    .Header img{
-        transition-duration: 0.3s;
-        display: none;
-    }
-
-    .Header ul{
-        transition-duration: 0.3s;
-        gap: 14px;
+    .menu-btn a{
+        font-size: 0.8rem;
+        padding: 13px 15px;
     }
 }

@@ -4,9 +4,11 @@
 }
 .Banner--Child {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
 }
 .Banner--Child h3{
     letter-spacing: 1px;
@@ -28,7 +30,7 @@
     width: 100%;
     max-width: 490px;
 }
-.Button{
+.B-Button{
     margin-top: 20px;
 }
 .Button a{
@@ -44,7 +46,7 @@
     transition: 400ms;
 }
 .Banner a:hover{
-    background-color: var(--secondary);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .Banner__primaryColor {
     color: var(--primary)
@@ -55,17 +57,25 @@
 }
 
 .Banner--Profile img{
-    max-width: 550px;
+    max-width: 420px;
 }
 
 @media (max-width: 1024px){
     .Banner--Profile img{
-        max-width: 460px;
+        max-width: 380px;
+        height: 380px;
         transition-duration: 0.3s;
     }
 }
 
-@media (max-width: 960px){
+@media (max-width: 900px){
+    .Banner--Profile img{
+        max-width: 340px;
+        transition-duration: 0.3s;
+    }
+}
+
+@media (max-width: 800px){
     .Banner {
         max-height: fit-content;
         height: auto;
@@ -73,9 +83,14 @@
     .Banner--Child {
         flex-direction: column;
     }
+
+    .Banner--Profile img{
+        max-width: 400px;
+        transition-duration: 0.3s;
+    }
 }
 
-@media (max-width: 725px){
+@media (max-width: 768px){
     .Banner--Child {
         font-size: 12px;
         transition-duration: 0.3s;
@@ -86,18 +101,12 @@
     .Banner--Content {
         padding: 20px 30px;
     }
-}
 
-@media (max-width: 425px){
     .Banner--Profile img{
-        max-width: 350px;
-        transition-duration: 0.3s;
+        display: none;
     }
-}
 
-@media (max-width: 320px){
-    .Banner--Profile img{
-        max-width: 300px;
-        transition-duration: 0.3s;
+    .B-Button{
+        margin: 40px 0;
     }
 }
